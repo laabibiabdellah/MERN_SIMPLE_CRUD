@@ -5,3 +5,7 @@
 .swal2-actions {
   @apply flex justify-center gap-4;
 }
+
+.menu2 {
+  @apply fixed md:hidden top-0 left-[-100%] z-50 flex flex-col items-center justify-center gap-6 text-sm w-full h-screen bg-teal-600;
+}
