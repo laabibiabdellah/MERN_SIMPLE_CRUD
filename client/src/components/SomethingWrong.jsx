@@ -23,12 +23,6 @@ export default function SomethingWrong({ show }) {
 
           <strong className="block font-medium"> Something went wrong </strong>
         </div>
-
-        {/* <p className="mt-2 text-sm text-red-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quasi
-          assumenda numquam deserunt consectetur autem nihil quos debitis dolor
-          culpa.
-        </p> */}
       </div>
     </>
   );
