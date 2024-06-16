@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 require("./config/connect");
-// const cors = require("cors");
+
+const cors = require("cors");
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 const PORT = 3000;
 

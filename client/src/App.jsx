@@ -1,7 +1,22 @@
+import Form from "./components/Form";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 export default function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-400">App</h1>
+      <Router>
+        <Nav />
+        <div className="container mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/add-user" element={<Form />} />
+            <Route path="/update-user/:id" element={<div>Update user</div>} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }
