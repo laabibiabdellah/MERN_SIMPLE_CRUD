@@ -19,13 +19,13 @@ export default function Home() {
     };
 
     fetchUsers();
-  }, []);
+  }, [users]);
 
   return (
     <>
       <div className="flex justify-center flex-wrap gap-5 py-[30px]">
         {users.map(({ _id, name, age }) => (
-          <Card key={_id} name={name} age={age} />
+          <Card key={_id} name={name} age={age} CardId={_id} />
         ))}
         {users.length === 0 && <p>No users found.</p>}
       </div>

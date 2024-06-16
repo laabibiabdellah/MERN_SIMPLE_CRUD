@@ -2,6 +2,8 @@ import Form from "./components/Form";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 
+import "./assets/sweetalert2.min.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
