@@ -27,7 +27,11 @@ export default function Home() {
         {users.map(({ _id, name, age }) => (
           <Card key={_id} name={name} age={age} CardId={_id} />
         ))}
-        {users.length === 0 && <p>No users found.</p>}
+        {users.length === 0 && (
+          <h1 className="text-center text-gray-800 text-3xl mt-10">
+            No users found.
+          </h1>
+        )}
       </div>
     </>
   );
